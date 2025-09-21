@@ -5,8 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Async Math</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
+    <div class="my-3 mx-3 border border-info rounded bg-info-subtle text-info-emphasis">
+        <h1 class="text-center">Press the buttons to show on console the result of each section</h1>
+    </div>
+    <div class="row mt-3 mx-3 border border-info-subtle rounded bg-body-secondary">
+        <div class="col-12 col-md-6 my-3">
+            <h2 class="text-center">Promise.then() Chaining Section</h2>
+            <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-primary" id="thenChaining">Start</button>
+            </div>
+            <div id="chainMiddle">Intermedium results: </div>
+            <div id="chainFinalResult">The final result is </div>
+        </div>
+        <div class="col-12 col-md-6 my-3">
+            <h2 class="text-center">Async/Await Section</h2>
+            <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-primary" id="asyncAwait">Start</button>
+            </div>
+            <div id="awaitMiddle">Intermedium results: </div>
+            <div id="awaitFinalResult">The final result is </div>
+        </div>
     <script src="async-math.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
